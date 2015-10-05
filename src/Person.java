@@ -1,3 +1,4 @@
+import java.lang.System;
 import java.util.Scanner;
 
 public class Person {
@@ -57,6 +58,7 @@ public class Person {
                 this.age = 2;
             }
 
+
             //actual value to words.
             if (this.inSchool == true && this.age == 5 && this.firstDayOfSchool == true){
                 if(this.personality.equalsIgnoreCase("jerk")){
@@ -69,6 +71,20 @@ public class Person {
                     else if(input.equals("2"))System.out.println(string2);
                     else if(input.equals("3"))System.out.println(string3);
                     else Main.crash();
+                    System.out.println(this.name + ", that was not very nice of you to say, now was it?");
+
+                    string1 = "Sorry :(";
+                    string2 = "My nose is burning like the Whitehouse in 1814";
+                    System.out.printf("1: %s%n2: %s%n",string1,string2);
+                    input = scan.nextLine();
+                    if(input.equals("1")) {
+                        System.out.println(string1);
+                        System.out.printf("It's alright, everybody makes mistakes.%nRight class?%nClass:everybody does!%n");
+                    }
+                    else if(input.equals("2")){
+                        System.out.println(string2);
+                        System.out.println("Would you like me to call your parents " + this.name + "?");
+                    }
                     this.firstDayOfSchool = false;
                 }
 
