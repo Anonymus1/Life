@@ -1,0 +1,8 @@
+.idea/.name
+*.xml
+Life.iml
+out/production/Life/Main.class
+out/artifacts/Life_jar/Life.jar
+out/production/Life/META-INF/MANIFEST.MF
+out/production/Life/Person.class
+src/META-INF/MANIFEST.MF
